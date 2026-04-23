@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walimatul Urus | Syafizam & Wana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Canvas Starfield -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Corner SVG Ornaments -->
+    <svg class="corner-ornament top-left" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,10 Q10,60 60,110" stroke="#c9a96e" stroke-width="0.8" fill="none" opacity="0.7" />
+        <path d="M10,10 Q60,10 110,60" stroke="#c9a96e" stroke-width="0.8" fill="none" opacity="0.7" />
+        <circle cx="10" cy="10" r="4" fill="#c9a96e" opacity="0.8" />
+        <path d="M30,10 Q10,30 10,30" stroke="#c9a96e" stroke-width="0.5" fill="none" />
+        <text x="16" y="28" font-size="10" fill="#c9a96e" opacity="0.6">✦</text>
+        <text x="28" y="17" font-size="8" fill="#c9a96e" opacity="0.5">·</text>
+        <text x="40" y="12" font-size="8" fill="#c9a96e" opacity="0.4">·</text>
+        <path d="M15,15 L35,15 M15,15 L15,35" stroke="#c9a96e" stroke-width="0.5" fill="none" opacity="0.4" />
+    </svg>
+    <svg class="corner-ornament top-right" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,10 Q10,60 60,110" stroke="#c9a96e" stroke-width="0.8" fill="none" opacity="0.7" />
+        <path d="M10,10 Q60,10 110,60" stroke="#c9a96e" stroke-width="0.8" fill="none" opacity="0.7" />
+        <circle cx="10" cy="10" r="4" fill="#c9a96e" opacity="0.8" />
+        <text x="16" y="28" font-size="10" fill="#c9a96e" opacity="0.6">✦</text>
+        <path d="M15,15 L35,15 M15,15 L15,35" stroke="#c9a96e" stroke-width="0.5" fill="none" opacity="0.4" />
+    </svg>
+    <svg class="corner-ornament bottom-left" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,10 Q10,60 60,110" stroke="#c9a96e" stroke-width="0.8" fill="none" opacity="0.7" />
+        <path d="M10,10 Q60,10 110,60" stroke="#c9a96e" stroke-width="0.8" fill="none" opacity="0.7" />
+        <circle cx="10" cy="10" r="4" fill="#c9a96e" opacity="0.8" />
+        <text x="16" y="28" font-size="10" fill="#c9a96e" opacity="0.6">✦</text>
+        <path d="M15,15 L35,15 M15,15 L15,35" stroke="#c9a96e" stroke-width="0.5" fill="none" opacity="0.4" />
+    </svg>
+    <svg class="corner-ornament bottom-right" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,10 Q10,60 60,110" stroke="#c9a96e" stroke-width="0.8" fill="none" opacity="0.7" />
+        <path d="M10,10 Q60,10 110,60" stroke="#c9a96e" stroke-width="0.8" fill="none" opacity="0.7" />
+        <circle cx="10" cy="10" r="4" fill="#c9a96e" opacity="0.8" />
+        <text x="16" y="28" font-size="10" fill="#c9a96e" opacity="0.6">✦</text>
+        <path d="M15,15 L35,15 M15,15 L15,35" stroke="#c9a96e" stroke-width="0.5" fill="none" opacity="0.4" />
+    </svg>
+
+    <!-- Floating Petals Container -->
+    <div id="petals-container"></div>
+
+    <!-- Fireflies Container -->
+    <div id="fireflies-container"></div>
+
+    <div class="container">
+        <header class="fade-in">
+            <h3 class="subtitle">Selamat Datang Ke Majlis Perkahwinan Kami</h3>
+            <h1 class="title">Syafizam & Wana</h1>
+            <div class="divider"><span class="divider-content">❧</span></div>
+        </header>
+
+        <section class="couple-section fade-in delay-1">
+            <div class="image-wrapper">
+                <div class="portrait left-portrait">
+                    <img src="public/img/Fizam.png" alt="Muhammad Syafizam">
+                    <p class="name">Muhammad<br>Syafizam</p>
+                </div>
+                <div class="and-symbol">&</div>
+                <div class="portrait right-portrait">
+                    <img src="public/img/Wana.jpeg" alt="Nur Thajwanawabatullah">
+                    <p class="name">Nur<br>Thajwanawabatullah</p>
+                </div>
+            </div>
+
+            <p class="invitation-text">
+                Jemputan Ke Majlis Perkahwinan Kami</p>
+
+            <div class="date-badge">
+                <span>✦</span>
+                <span>Insya-Allah · 2033</span>
+                <span>✦</span>
+            </div>
+        </section>
+
+        <div class="flower-row fade-in delay-2">✿ · ✾ · ❀ · ✿ · ✾ · ❀ · ✿</div>
+
+        <section class="action-section fade-in delay-3">
+            <button id="revealBtn" class="elegant-btn">Klik disini</button>
+        </section>
+    </div>
+
+    <!-- Modal for the Joke -->
+    <div id="jokeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-emoji">🎉</div>
+                <h2 class="joke-text">"hahahahhahaha gurau je, tapi insya-Allah kita usahakan sama-sama yee
+                    babyyy,usahakan sampai ini jadi kenyataan" ❤️</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
